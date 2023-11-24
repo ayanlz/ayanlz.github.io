@@ -1,54 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-        html, body{
-            height: 100%;
-            width: 100%;
-        }
-        video {
-            height: 100%;
-            width: 100%;
-            /* object-fit: cover; */
-            position: fixed;
-            left: 0;
-            top: 0;
-        }
-        header{
-            position: relative;
-            height: 36%;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #000000;
-            font-size: 18px;
-            font-weight: 500;
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            /* letter-spacing: 20px; */
-        }
-    </style>
-</head>
+<meta charset="UTF-8">
+<title>实时显示系统时间B</title>
+ 
 <script>
-    function  getD1(){
-        var date=new Date();
-        var d1=date.toLocaleString();
-        document.getElementById("datetime").innerHTML =d1; 
-    }
-
-    setInterval("getD1();",500);
-
+     function  getD1(){
+         var date=new Date();
+         var d1=date.toLocaleString();
+         document.getElementById("datetime").innerHTML =d1; 
+     }
+ 
+     setInterval("getD1();",1000);
+ 
 </script> 
-<body>
-    <video autoplay muted loop src="伪校园码.mp4"></video>
-    <header id="datetime">/header>
+</head>
+<body  onload = getD1()>
+<div id="datetime">/div>
+ 
 </body>
 </html>
