@@ -13,6 +13,7 @@
         html, body{
             height: 100%;
             width: 100%;
+            overflow: hidden;
         }
         video {
             height: 100%;
@@ -22,8 +23,8 @@
             left: 0;
             top: 0;
         }
-        header{
-            position: relative;
+        h1{
+            position: absolute;
             height: 36.5%;
             width: 100%;
             display: flex;
@@ -31,9 +32,31 @@
             align-items: center;
             color: #000000;
             font-size: 18px;
-            font-weight: 800;
+            font-weight: 550;
             font-family:Arial, Helvetica, sans-serif;
             letter-spacing: -0.3px;
+        }
+        h2 {
+            position: absolute;
+            top: 350px;
+            left: 702px;
+            box-sizing:content-box;
+            color: #aaaaaa;
+            font-size: 12px;
+            font-weight: 500;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            letter-spacing:-0.5px;
+        }
+        h3 {
+            position: absolute;
+            top: 350px;
+            left: 779px;
+            box-sizing:content-box;
+            color: #aaaaaa;
+            font-size: 12px;
+            font-weight: 520;
+            font-family:Arial, Helvetica, sans-serif;
+            letter-spacing:-0.5px;
         }
     </style>
 </head>
@@ -49,6 +72,9 @@
 </script> 
 <body>
     <video autoplay muted loop src="伪校园码.mp4"></video>
-    <header id="datetime">/header>
+    <h1 id="datetime"></h1>
+    <h2 contenteditable>张化云</h2>
+    <h3 contenteditable>2023412080313</h2>
+
 </body>
 </html>
