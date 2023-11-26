@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html, body{
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+        video {
+            height: 100%;
+            width: 100%;
+            /* object-fit: cover; */
+            position: fixed;
+            left: 0;
+            top: 0;
+        }
+        h1{
+            position: absolute;
+            height: 36.5%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #000000;
+            font-size: 18px;
+            font-weight: 550;
+            font-family:Arial, Helvetica, sans-serif;
+            letter-spacing: -0.3px;
+        }
+        h2 {
+            position: absolute;
+            top: 350px;
+            left: 702px;
+            box-sizing:content-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #aaaaaa;
+            font-size: 12px;
+            font-weight: 500;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            letter-spacing:-0.5px;
+        }
+        h3 {
+            position: absolute;
+            top: 350px;
+            left: 779px;
+            box-sizing:content-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #aaaaaa;
+            font-size: 12px;
+            font-weight: 520;
+            font-family:Arial, Helvetica, sans-serif;
+            letter-spacing:-0.5px;
+        }
+    </style>
+</head>
+<script>
+    function  getD1(){
+        var date=new Date();
+        var d1=date.toLocaleString();
+        document.getElementById("datetime").innerHTML =d1; 
+    }
+
+    setInterval("getD1();",500);
+
+</script> 
+<body>
+    <video autoplay muted loop src="伪校园码.mp4"></video>
+    <h1 id="datetime"></h1>
+    <h2 contenteditable>张化云</h2>
+    <h3 contenteditable>2023412080313</h2>
+
+</body>
+</html>
