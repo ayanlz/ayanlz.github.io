@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=340px, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
         * {
@@ -36,25 +36,33 @@
             font-family:Arial, Helvetica, sans-serif;
             letter-spacing: -0.3px;
         }
-        h2 {
-            position: fixed;
-            top: 350px;
-            left: 704px;
-            box-sizing:content-box;
+        .container{            
+            position:fixed;
+            height: 100%;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
+
+        }
+        h2 {
+            position: absolute;
+            top: 47.3%;
+            left: 45.7%;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
             color:#aaaaaa;
             font-size: 12px;
             font-weight: 500;
             font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             letter-spacing:-0.5px;
+            text-align: center;
         }
         h3 {
-            position: fixed;
-            top: 350px;
-            left: 779px;
-            box-sizing:content-box;
+            position: absolute;
+            top: 46%;
+            left: 3.2%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -63,6 +71,7 @@
             font-weight: 520;
             font-family:Arial, Helvetica, sans-serif;
             letter-spacing:-0.5px;
+            text-align: center;
         }
     </style>
 </head>
@@ -77,10 +86,11 @@
 
 </script> 
 <body>
-    <video autoplay muted loop src="伪校园码.mp4"></video>
+    <video autoplay muted loop src="伪校园码有字.mp4"></video>
     <header id="datetime"></header>
+    <div class="container">
     <h2 contenteditable>张化云</h2>
     <h3 contenteditable>2023412080313</h2>
-
+    </div>
 </body>
 </html>
